@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleg Nekrasov](https://up.htmlacademy.ru/htmlcss/34/user/1840995).
-* Наставник: `Анна Вараксина`.
+* Наставник: [Анна Вараксина](https://htmlacademy.ru/profile/id153610).
 
 ---
 
