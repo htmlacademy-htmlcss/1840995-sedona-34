@@ -116,7 +116,7 @@ div .advantages-item-description {
 
  }
 
- .dark-background {
+ .deep-background {
     background-color: rgba(131, 179, 211, 0.2);;
  }
 
@@ -193,7 +193,7 @@ div .advantages-item-description {
     line-height: 26px;
  }
 
- .button-submit, .button-blue {
+ .button-submit, .card-second-column .hotel-card-button {
     background-color: #82B3D3;
     text-align: center;
  }
@@ -243,7 +243,7 @@ div .advantages-item-description {
     text-transform: uppercase;
 }
 
-.button-green {
+.card-second-column .button-favorite {
     background-color: #7DB54F;
 }
 
@@ -270,12 +270,12 @@ div .advantages-item-description {
     color: inherit;
 }
 
-.subscribe-light {
+.subscribe-catalog {
     color: #000000;
     background-color: #ffffff;
     background-image: none;
 }
 
-.subscribe-light .subscribe-description {
+.subscribe-catalog .subscribe-description {
     color: #333333;
 }
