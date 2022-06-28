@@ -217,12 +217,17 @@ div .advantages-item-description {
 }
 
 .catalog-options .select-control {
+    font-family: inherit;
     color: inherit;
 }
 
 .change-view .button {
     color: #000000;
     background-color: #ffffff;
+}
+
+.change-view {
+    font-family: inherit;
 }
 
 .hotel-card-link {
@@ -261,6 +266,7 @@ div .advantages-item-description {
 }
 
 .select-amount {
+    font-family: inherit;
     color: inherit;
 }
 
