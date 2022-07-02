@@ -270,6 +270,10 @@ body {
     background-size: 100% auto;
  }
 
+ .inner-container {
+    margin: 0 70px;
+ }
+
  .inner-header-title {
     font-size: 60px;
     line-height: 78px;
@@ -279,6 +283,19 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: inherit;
+ }
+
+ .catalog-filter {
+    display: flex;
+    width: 1060px;
+ }
+
+ .catalog-filter-group {
+    margin-right: 70px;
+ }
+
+ .price-form {
+    margin-left: 106px;
  }
 
  .catalog-filter-title {
