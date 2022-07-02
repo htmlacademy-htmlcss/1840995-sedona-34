@@ -134,8 +134,8 @@ body {
 
 .advantages-item {
     text-align: center;
-    width: 400px;
-    padding: 0;
+    width: 230px;
+    padding: 85px;
     margin: 0;
 }
 
@@ -162,6 +162,7 @@ body {
 
 .img-city {
     display: block;
+    list-style-type: none;
 }
 
 .container-city {
