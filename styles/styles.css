@@ -32,6 +32,17 @@ body {
     min-height: 100%;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .page-container {
     width: 1200px;
     margin: 0 auto;
@@ -54,6 +65,7 @@ body {
 
 .main-container {
     flex-grow: 1;
+
 }
 .main-header {
     background-color: #ffffff;
@@ -72,25 +84,38 @@ body {
     text-decoration: none;
     text-align: center;
     color: inherit;
+    padding: 20px 17px;
+    display: block;
 }
 
-.navigation-list{
+.navigation-list {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
     width: 500px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .actions-list {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     max-width: 305px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    min-width: 42px;
+    min-height: 66px;
 }
 
 .actions-link {
     color: inherit;
     text-decoration: none;
     text-align: center;
+    padding: 20px 17px;
+    display: block;
 }
 
 .promo {
@@ -104,6 +129,7 @@ body {
 .logo {
     display: block;
     margin: 0 auto;
+    padding-top: 51px;
 }
 
 .advantages-header {
