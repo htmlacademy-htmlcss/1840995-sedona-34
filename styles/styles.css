@@ -30,6 +30,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     min-height: 100%;
+    width: 1200px;
 }
 
 .visually-hidden {
@@ -44,7 +45,7 @@ body {
   }
 
 .page-container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -134,6 +135,8 @@ body {
 
 .advantages-header {
     text-align: center;
+    padding-top: 63px;
+    padding-bottom: 90px;
 }
 
 .advantages-description {
@@ -148,6 +151,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    margin-top: 31px;
+    margin-bottom: 0;
 }
 
 .advantages-list {
@@ -156,6 +161,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .advantages-item {
@@ -163,6 +169,7 @@ body {
     width: 230px;
     padding: 85px;
     margin: 0;
+    white-space: pre-line;
 }
 
 .advantages-item-wrapper .advantages-item-description {
@@ -183,7 +190,9 @@ body {
 }
 
 .advantages-item-wrapper {
-    width: 1200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .img-city {
@@ -223,6 +232,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    list-style-type: none;
  }
 
  .deep-background {
@@ -230,7 +240,10 @@ body {
  }
 
  .search-options {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding-top: 91px;
  }
 
  .search-title {
@@ -243,24 +256,37 @@ body {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    white-space: pre-line;
+    padding-top: 29px;
+    margin: 0;
+    padding-bottom: 56px;
  }
 
  .subscribe {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-image: url(/images/subscibe-background.jpg);
+    background-repeat: no-repeat;
     color: #ffffff;
     background-color: #000000;
+    padding-top: 94px;
  }
 
  .subscribe-title {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 29px;
  }
 
  .subscribe-description {
     font-size: 22px;
     line-height: 26px;
+    white-space: pre-line;
+    margin: 0;
+    padding-bottom: 46px;
  }
 
  .field {
@@ -278,17 +304,33 @@ body {
 
  .page-footer-container {
     display: flex;
-    margin: 0 auto;
-    width: 1060px;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    max-width: 100%;
  }
 
  .footer-social {
-    margin-right: 237px;
     max-width: 150px;
  }
 
+ .footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+
+ .social-item {
+    max-width: 24px;
+    max-height: 14px;
+    margin: 0;
+ }
+
  .footer-site {
-    margin-left: auto;
     max-width: 115px;
  }
 
@@ -301,12 +343,15 @@ body {
  }
 
  .inner-container {
-    margin: 0 70px;
+    max-width: 100%;
+    padding: 35px 70px 70px;
  }
 
  .inner-header-title {
     font-size: 60px;
     line-height: 78px;
+    margin: 0;
+    padding: 0;
  }
 
  .breadcrumbs-link {
@@ -317,7 +362,6 @@ body {
 
  .catalog-filter {
     display: flex;
-    width: 1060px;
  }
 
  .catalog-filter-group {
@@ -356,12 +400,15 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+    padding: 0;
+    margin: 0;
 }
 
 .select-container {
     display: flex;
-    width: 1057px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 55px 72px;
 }
 
 .catalog-options .select-control {
