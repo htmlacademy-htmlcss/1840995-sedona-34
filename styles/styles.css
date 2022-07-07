@@ -270,6 +270,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding-top: 91px;
+    padding-bottom: 93px;
  }
 
  .search-title {
@@ -296,7 +297,7 @@ body {
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: #000000;
-    padding-top: 94px;
+    padding: 94px 0;
  }
 
  .subscribe-title {
