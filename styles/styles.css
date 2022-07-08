@@ -416,7 +416,7 @@ body {
  }
 
  .button-submit,
- .card-second-column .hotel-card-button {
+ .hotel-card-favorite.button {
     background-color: #82B3D3;
     text-align: center;
  }
@@ -445,7 +445,7 @@ body {
     display: flex;
     max-width: 100%;
     margin: 0;
-    padding: 55px 72px;
+    padding: 76px 72px;
 }
 
 .catalog-options .select-control {
@@ -471,16 +471,70 @@ body {
 }
 
 .hotel-list {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
     padding: 0;
-    margin: 0;
+    margin: 0 93px;
     list-style-type: none;
+    gap: 58px;
+    margin-bottom: 86px;
 }
 
-.hotel-card-link {
+.hotel-card {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 211px min-content min-content min-content auto;
+    grid-template-areas: "image image"
+                         "title title"
+                         "type price"
+                         "more favorite"
+                         "stars rate";
+    row-gap: 16px;
+    column-gap: 20px;
+}
+
+.hotel-card-image-link {
+    grid-area: image;
+}
+.hotel-card-title-link {
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
     color: inherit;
+    grid-area: title;
+}
+
+.hotel-card-type {
+    grid-area: type;
+    margin: 0;
+}
+
+.hotel-card-price {
+    grid-area: price;
+    margin: 0;
+}
+
+.hotel-card-more {
+    grid-area: more;
+}
+
+.hotel-card-favorite {
+    grid-area: favorite;
+}
+
+.stars {
+    grid-area: stars;
+}
+
+.hotel-rating {
+    grid-area: rate;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hotel-card-title {
+    margin: 0;
+    padding: 0;
 }
 
 .hotel-rating {
@@ -489,7 +543,7 @@ body {
     text-transform: uppercase;
 }
 
-.card-second-column .button-favorite {
+.hotel-card .button-favorite {
     background-color: #7DB54F;
 }
 
