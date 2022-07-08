@@ -493,6 +493,10 @@ body {
     column-gap: 20px;
 }
 
+.hotel-card-image {
+    object-fit: contain;
+}
+
 .hotel-card-image-link {
     grid-area: image;
 }
