@@ -649,6 +649,7 @@ body {
 }
 
 .catalog-options {
+  position: relative;
   color: #333333;
 }
 
@@ -713,7 +714,18 @@ body {
   margin: 0 93px;
   list-style-type: none;
   gap: 58px;
-  margin-bottom: 86px;
+  margin-bottom: 116px;
+}
+
+.catalog-options::after {
+  content:'';
+  position: absolute;
+  height: 0;
+  left: 72px;
+  right: 72px;
+  bottom: 115px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
 }
 
 .hotel-card {
