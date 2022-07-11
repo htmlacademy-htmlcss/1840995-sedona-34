@@ -186,6 +186,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-action:active {
+  background-color: #756157;
+}
+
 .button:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
@@ -402,6 +406,10 @@ body {
   min-width: 544px;
 }
 
+.button-search:active {
+  background-color: #756157;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -429,9 +437,22 @@ body {
   padding-bottom: 46px;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
 .field {
+  box-sizing: border-box;
+  border: none;
   font-family: inherit;
   color: inherit;
+  width: 600px;
+  margin: 0;
+  padding: 20px 22px;
+  padding-right: auto;
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
 }
 
 .button-subscribe {
@@ -439,11 +460,16 @@ body {
   min-width: 200px;
   padding-top: 12px;
   padding-bottom: 12px;
+  border-radius: 0 10px 10px 0;
 }
 
 .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  background-color: #82B3D3;
 }
 
 .footer-link-phone {
@@ -675,6 +701,22 @@ body {
   color: inherit;
   width: 290px;
   margin-left: 191px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .change-view .button {
@@ -818,6 +860,10 @@ body {
   background-color: #68A2CA;
 }
 
+.hotel-card-favorite:active {
+  background-color: #82B3D3;
+}
+
 .hotel-card .button-favorite {
   background-color: #7DB54F;
 }
@@ -825,6 +871,10 @@ body {
 .button-favorite:hover,
 .button-favorite:focus {
   background-color: #6C9E42;
+}
+
+.button-favorite:active {
+  background-color: #7DB54F;
 }
 
 .pagination-container {
