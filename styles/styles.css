@@ -287,6 +287,21 @@ body {
   padding: 0 85px;
   padding-top: 182px;
   padding-bottom: 81px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 80px;
+}
+
+.house {
+  background-image: url(../images/advantages/icon-house.svg);
+}
+
+.eat {
+  background-image: url(../images/advantages/icon-food.svg);
+}
+
+.souvenir {
+  background-image: url(../images/advantages/icon-souvenir.svg);
 }
 
 .advantages-mini .advantages-title {
@@ -334,26 +349,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-}
-
-.house {
-  background-image: url(../images/advantages/icon-house.svg);
-  }
-
-.eat {
-  background-image: url(../images/advantages/icon-food.svg);
-  }
-
-.souvenir {
-  background-image: url(../images/advantages/icon-souvenir.svg);
-}
-
-.house,
-.eat,
-.souvenir {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 80px;
 }
 
 .advantages-item:nth-child(2n+1) {
@@ -819,8 +814,7 @@ body {
 
 .stars {
   grid-area: stars;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-position: left center;
 }
 
 .hotel-rating {
@@ -843,16 +837,33 @@ body {
   padding: 8px 22px;
 }
 
+.stars {
+  display: block;
+  margin-top: 10px;
+}
+
 .stars-four {
-  background-image: url(../images/catalog/four-stars.svg);
+  background-image: url(../images/catalog/star-rating.svg);
+  background-repeat: space;
+  width: 85px;
+  height: 17px;
+  background-size: 18px 17px;
 }
 
 .stars-three {
-  background-image: url(../images/catalog/three-stars.svg);
+  background-image: url(../images/catalog/star-rating.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+  height: 18px;
+  width: 64px;
 }
 
 .stars-two {
-  background-image: url(../images/catalog/two-stars.svg);
+  background-image: url(../images/catalog/star-rating.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+  height: 18px;
+  width: 42px;
 }
 
 .hotel-card-favorite:hover,
