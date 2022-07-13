@@ -66,6 +66,7 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .main-container {
@@ -96,6 +97,14 @@ body {
   color: inherit;
   padding: 20px 17px;
   display: block;
+}
+
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.action-icon:hover {
+  fill: rgba(0, 0, 0, 0.6);
 }
 
 .navigation-item {
@@ -311,7 +320,6 @@ body {
 .advantages-item-wrapper,
 .button-subscribe,
 .button-social {
-  /* text-align: center; */
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -702,7 +710,7 @@ body {
   position: relative;
   height: 0;
   background-color: unset;
-  border: 2px solid rgba(255,255,255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -815,11 +823,6 @@ body {
   border-radius: 50%;
 }
 
- .control-input[type="radio"]:focus + .control-input[type="radio"]:not(:checked) + .control-mark::before {
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
-}
-
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
@@ -831,7 +834,7 @@ body {
   content: "";
 }
 
-.control-input[type="radio"]:focus + .control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:focus + .control-input[type="radio"]:checked + .control-mark {
   border: 3px solid #83B3D3;
 }
 
@@ -982,7 +985,7 @@ body {
 }
 
 .catalog-options::after {
-  content:'';
+  content: '';
   position: absolute;
   height: 0;
   left: 72px;
@@ -1019,6 +1022,10 @@ body {
   text-decoration: none;
   color: inherit;
   grid-area: title;
+}
+
+.hotel-card-title:hover {
+  color: rgba(0, 0, 0, 0.7)
 }
 
 .hotel-card-type {
@@ -1143,6 +1150,7 @@ body {
   height: 60px;
   padding: 12px 24px;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .pagination-item:not(:first-child) .pagination-link:hover,
