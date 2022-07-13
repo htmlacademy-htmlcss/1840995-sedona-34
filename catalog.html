@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modal.css">
   </head>
 
   <body>
@@ -376,6 +377,59 @@
         </section>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <!-- modal-container-close чтобы скрыть модальное окно -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="submit">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-content" action="" method="post">
+          <h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
+          <div class="modal-row">
+            <label class="arrival-date" for="arrival">Дата заезда:</label>
+            <input class="text-input" id="arrival" type="text" placeholder="27 апреля 2020">
+            <button class="button-date" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="text-date">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="modal-row">
+            <label class="departure-date" for="departure">Дата выезда:</label>
+            <input class="text-input" id="departure" type="text" placeholder="1 сентября 2021">
+            <button class="button-date" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="text-date-two">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="field-modal">
+            <label class="field-label" for="adult">Взрослые:</label>
+            <span class="field-box">
+              <button class="field-button minus">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="field-number" id="adult" name="adult" type="number" value="2">
+              <button class="field-button plus" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </span>
+          </div>
+          <div class="field-modal">
+            <label class="field-label" for="children">Дети:</label>
+            <span class="field-box">
+              <button class="field-button minus">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="field-number" id="children" name="children" type="number" value="1">
+              <button class="field-button plus" type="button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </span>
+          </div>
+          <button class="button find">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>

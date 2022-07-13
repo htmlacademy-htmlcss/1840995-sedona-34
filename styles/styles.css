@@ -843,11 +843,6 @@ body {
   background-color: #FFFFFF;
 }
 
-.type-house:focus .control-input[type="radio"]:not(:checked) .control-mark {
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
-}
-
 .control-label {
   line-height: 21px;
 }
