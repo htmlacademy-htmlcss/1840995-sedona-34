@@ -453,7 +453,6 @@ body {
   width: 600px;
   margin: 0;
   padding: 20px 22px;
-  padding-right: auto;
   background-color: #F2F2F2;
   border-radius: 10px 0 0 10px;
 }
@@ -1150,7 +1149,8 @@ body {
 
 .pagination-item:not(:first-child) .pagination-link:hover,
 .pagination-item:not(:first-child) .pagination-link:focus,
-.pagination-show:hover {
+.pagination-show:hover,
+.pagination-show:focus {
   background-color: #68A2CA;
 }
 
