@@ -248,29 +248,44 @@
               </button>
               <p class="text-date-two">На эти даты есть свободные номера. Пока есть.</p>
             </div>
-            <div class="field-modal">
-              <label class="field-label" for="adult">Взрослые:</label>
-              <span class="field-box">
-                <button class="field-button minus">
-                  <span class="visually-hidden">Минус</span>
-                </button>
-                <input class="field-number" id="adult" name="adult" type="number" value="2">
-                <button class="field-button plus" type="button">
-                  <span class="visually-hidden">Плюс</span>
-                </button>
-              </span>
-            </div>
-            <div class="field-modal">
-              <label class="field-label" for="children">Дети:</label>
-              <span class="field-box">
-                <button class="field-button minus">
-                  <span class="visually-hidden">Минус</span>
-                </button>
-                <input class="field-number" id="children" name="children" type="number" value="1">
-                <button class="field-button plus" type="button">
-                  <span class="visually-hidden">Плюс</span>
-                </button>
-              </span>
+            <div class="field-modal-main">
+              <div class="field-modal">
+                <label class="field-label" for="adult">Взрослые:</label>
+                <span class="field-box">
+                  <button class="field-button minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="field-number" id="adult" name="adult" type="number" value="2">
+                  <button class="field-button plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </span>
+              </div>
+              <div class="field-modal">
+                <span class="field-label">
+                  <label class="field-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5ZM13 17V11H12V17H13ZM12 9V8H13V9H12Z" />
+                    </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <span class="field-box">
+                  <button class="field-button minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="field-number" id="children" name="children" type="number" value="1">
+                  <button class="field-button plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </span>
+              </div>
             </div>
             <button class="button find">Найти</button>
           </form>
