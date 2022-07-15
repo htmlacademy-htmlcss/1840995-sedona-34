@@ -212,8 +212,9 @@ body {
 }
 
 .promo {
+  position: relative;
   background-image: url(../images/welcome/index-background.jpg);
-  background-color: #000000;
+  background-color: rgba(131, 179, 211, 0.5);
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: 100% auto;
@@ -223,10 +224,22 @@ body {
   display: block;
 }
 
+.promo::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/welcome/divider.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .advantages-header {
@@ -403,10 +416,11 @@ body {
 
 .button-search {
   align-self: center;
-  line-height: 36px;
   padding-top: 12px;
   padding-bottom: 12px;
   min-width: 544px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-search:active {
@@ -449,12 +463,13 @@ body {
   box-sizing: border-box;
   border: none;
   font-family: inherit;
-  color: inherit;
   width: 600px;
   margin: 0;
   padding: 20px 22px;
   background-color: #F2F2F2;
   border-radius: 10px 0 0 10px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .button-subscribe {
@@ -463,6 +478,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 0 10px 10px 0;
+  font-size: 20px;
 }
 
 .button-subscribe:hover,
@@ -563,7 +579,7 @@ body {
 
 .inner-header {
   background-image: url(../images/catalog/catalog-background.jpg);
-  background-color: #000000;
+  background-color: rgba(131, 179, 211, 0.6);
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: 100% auto;
@@ -915,13 +931,14 @@ body {
 
 .catalog-options .select-control {
   font-family: inherit;
-  color: inherit;
-  /* width: 290px; */
+  color: #333333;
   margin-left: 191px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   padding: 14px 20px;
   padding-right: 129px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .select-control:hover,
@@ -1011,8 +1028,6 @@ body {
 }
 
 .hotel-card-title-link {
-  font-size: 24px;
-  line-height: 28px;
   text-decoration: none;
   color: inherit;
   grid-area: title;
@@ -1052,8 +1067,11 @@ body {
 }
 
 .hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
 
 .hotel-rating {
@@ -1154,7 +1172,8 @@ body {
   background-color: #68A2CA;
 }
 
-.pagination-item:not(:first-child) .pagination-link:active {
+.pagination-item:not(:first-child) .pagination-link:active,
+.pagination-show:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
@@ -1387,7 +1406,7 @@ body {
 }
 
 .tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../images/modal/triangle.svg");
   width: 19px;
   height: 9px;
@@ -1458,6 +1477,8 @@ body {
   border-radius: 4px;
   background-color: #F2F2F2;
   border: none;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .field-number::-webkit-outer-spin-button,
@@ -1467,7 +1488,7 @@ body {
 
 .field-number::placeholder {
   color: inherit;
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .field-number:focus {
