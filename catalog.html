@@ -125,7 +125,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control type-house">
@@ -139,14 +139,14 @@
                     <label class="control type-house">
                       <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
                       <span class="control-mark"></span>
-                      <span class="control-label">Апартаменты</span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control type-house">
                       <input class="visually-hidden control-input" type="radio" name="product-group" value="motels">
                       <span class="control-mark"></span>
-                      <span class="control-label">Мотель</span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -220,7 +220,7 @@
           <ul class="hotel-list">
             <li class="hotel-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="211"
+                <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" height="211"
                   alt="Гостиница Amara Resort & Spa.">
               </a>
               <a class="hotel-card-title-link" href="#">
@@ -235,7 +235,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="211"
+                <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" height="211"
                   alt="Гостиница Villas at Poco Diablo.">
               </a>
               <a class="hotel-card-title-link" href="#">
@@ -250,7 +250,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="211"
+                <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" height="211"
                   alt="Гостиница Desert Quail Inn.">
               </a>
               <a class="hotel-card-title-link" href="#">
@@ -265,7 +265,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-image-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="211"
+                <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" height="211"
                   alt="Гостиница GreenTree Inn.">
               </a>
               <a class="hotel-card-title-link" href="#">
@@ -321,7 +321,7 @@
             <label for="subscribe-email">
               <span class="visually-hidden">Email.</span>
             </label>
-            <input class="field" placeholder="Ваш-email" type="email" name="subscribe-email" id="subscribe-email"
+            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
               required>
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
@@ -381,26 +381,26 @@
         </div>
       </footer>
       <!-- Модальное окно -->
-      <!-- modal-container-close чтобы скрыть модальное окно -->modal-container-close
+      <!-- modal-container-close чтобы скрыть модальное окно -->
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
-          <button class="modal-close-button" type="submit">
+          <button class="modal-close-button close" type="submit">
             <span class="visually-hidden">Закрыть.</span>
           </button>
           <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
             <div class="modal-row">
-              <label class="arrival-date" for="arrival">Дата заезда:</label>
-              <input class="text-input" id="arrival" type="text" placeholder="27 апреля 2020">
-              <button class="button-date" type="button">
+              <label class="arrival-date" for="arrival">Дата Заезда:</label>
+              <input class="text-input" id="arrival" type="text" placeholder="Укажите дату">
+              <button class="button-date calendar" type="button">
                 <span class="visually-hidden">Календарь.</span>
               </button>
               <p class="text-date">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-row">
-              <label class="departure-date" for="departure">Дата выезда:</label>
-              <input class="text-input" id="departure" type="text" placeholder="1 сентября 2021">
-              <button class="button-date" type="button">
+              <label class="departure-date" for="departure">Дата Выезда:</label>
+              <input class="text-input" id="departure" type="text" placeholder="Укажите дату">
+              <button class="button-date calendar" type="button">
                 <span class="visually-hidden">Календарь.</span>
               </button>
               <p class="text-date-two">На эти даты есть свободные номера. Пока есть.</p>
