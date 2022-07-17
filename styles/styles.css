@@ -871,7 +871,7 @@ body {
   content: "";
 }
 
- .type-house:focus-within .control-mark {
+.type-house:focus-within .control-mark {
   outline: 3px solid #83B3D3;
   background-color: #ffffff;
   box-sizing: border-box;
