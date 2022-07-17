@@ -30,6 +30,7 @@ body {
   background-color: #ffffff;
   min-height: 100%;
   min-width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -402,7 +403,7 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
 }
 
 .search-description {
@@ -411,8 +412,8 @@ body {
   color: #333333;
   margin: 0;
   padding-bottom: 56px;
-  padding-left: 292px;
-  padding-right: 301px;
+  padding-left: 288px;
+  padding-right: 296px;
 }
 
 .button-search {
@@ -544,9 +545,12 @@ body {
   display: block;
 }
 
+/* Состояния для социальных сетей */
+
 .social-icon:hover,
 .social-icon:focus {
   fill: #68A2CA;
+  outline: none;
 }
 
 .social-icon:active {
@@ -566,6 +570,7 @@ body {
 .footer-link-phone:hover,
 .footer-link-phone:focus {
   color: #756157;
+  border: none;
 }
 
 .footer-link-phone:active {
@@ -580,6 +585,7 @@ body {
 .htmlacademy-link-logo:hover,
 .htmlacademy-link-logo:focus {
   fill: #756157;
+  border: none;
 }
 
 .htmlacademy-link-logo:active {
@@ -817,10 +823,11 @@ body {
   left: 2px;
   width: 20px;
   height: 20px;
-  border: none;
   border-radius: 4px;
   background-color: #ffffff;
 }
+
+/* Состояния для элементов фильтра */
 
 .control:hover .control-mark,
 .control:active .control-mark {
@@ -864,8 +871,10 @@ body {
   content: "";
 }
 
-.control-input[type="radio"]:focus + .control-input[type="radio"]:checked + .control-mark {
-  border: 3px solid #83B3D3;
+ .type-house:focus-within .control-mark {
+  outline: 3px solid #83B3D3;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .type-house:hover .control-mark,
@@ -1350,6 +1359,7 @@ body {
 }
 
 .text-input::placeholder {
+  font-family: inherit;
   font-weight: 700;
   color: inherit;
   font-size: 18px;
