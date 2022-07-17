@@ -721,9 +721,7 @@ body {
   color: #ffffff;
   font-weight: 400;
   width: 144px;
-  padding: 14px;
-  padding-left: 18px;
-  padding-bottom: 10px;
+  padding: 9px 14px 15px 17px;
   border: 2px solid #FFFFFF;
   background-color: unset;
   font-family: inherit;
@@ -736,9 +734,10 @@ body {
 }
 
 .range-input::placeholder {
-  display: block;
+  display: inline-block;
   text-align: right;
-  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .range-scale {
